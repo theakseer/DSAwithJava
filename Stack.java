@@ -21,7 +21,13 @@ public class Stack<T> implements Iterable<T> {
     }
 
     public T pop() {
+        if (isEmpty()) throw new java.util.EmptyStackException();
         return list.removeLast();
+    }
+    
+    public T peek(){
+        if (isEmpty()) throw new java.util.EmptyStackException();
+        return list.peekLast();
     }
 
     @Override
