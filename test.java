@@ -32,6 +32,7 @@ public class test {
         while (s_it.hasNext()) {
             String s = s_it.next();
             System.out.println(s);
+            
         }
     }
 }
